@@ -1,0 +1,309 @@
+@font-face {
+    font-family: R05;
+    src: url(fontes/Roboto-05.ttf);
+}
+@font-face {
+    font-family: R03;
+    src: url(fontes/Roboto-03.ttf);
+}
+@font-face {
+    font-family: R01;
+    src: url(fontes/Roboto-01.ttf);
+}
+@font-face {
+    font-family: K01;
+    src: url(fontes/RobotoCondensed-Light.ttf);
+}
+
+/*SECTION ANALISE*/
+#analise{
+    position: fixed;
+    left: 100%;
+    padding-top: 5.5%;
+    padding-bottom: 5.5%;
+    transition: 1s ;
+    width: 100%;
+}
+
+#dados{
+    text-align: center;
+    display: inline-block;
+    width: 70%;
+    border-radius: 1rem;
+    padding: 8%;
+    margin-left: 9.5%;
+}
+
+#dados-card {
+    width: 25%;
+    padding: 4%;
+    background-color: #fff;
+    display: inline-block;
+    border-radius:100px ;
+    box-shadow: inset 0 0 2em rgb(255, 255, 255), 0 0 1em rgba(124, 124, 124, 0.226);
+    margin: 1%;
+}
+
+.identificador-1{
+    font-size: 20px;
+    background-color: rgb(98, 0, 255);
+    color: #fff;
+    border-radius: 100%;
+    padding: 3%;
+}
+.identificador-2{
+    font-size: 20px;
+    background-color: rgb(0, 132, 255);
+    color: #fff;
+    border-radius: 100%;
+    padding: 3%;
+}
+.identificador-3{
+    font-size: 20px;
+    background-color: rgb(4, 214, 109);
+    color: #fff;
+    border-radius: 100%;
+    padding: 3%;
+}
+#dados-titulos{
+    color: rgba(0, 0, 0, 0.856);
+    font-size: 18px;
+    padding: 3%;
+    font-family: R03;
+    font-weight: 700;
+}
+
+#dados p{
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.589);
+    font-family: R03;
+}
+@media screen and (max-width:500px) {
+    #dados{
+        width: 99%;
+        padding: 0;
+        margin-left: 0;
+        margin-bottom:25%;
+    }
+    #analise{
+        margin-top: 0;
+    }
+    #dados-card {
+        width: 90%;
+        margin-top: 5%;
+    }
+}
+/*SECTION  CONTA */
+#conta{
+    display: none;
+    margin-left: 25%;
+    margin-bottom: 5%;
+}
+#dadosconta{
+    padding-right: 3%;
+    width: 45%;
+    margin-left: 9.5%;
+    border-radius: 20px;
+}
+
+#dadosconta input{
+    border: 1px solid rgb(202, 202, 202);
+    width: 97%;
+}
+
+
+#dadosconta input:focus{
+    border: 1.5px solid rgb(71, 236, 134);
+}
+
+#dadosconta form{
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    height: 0;
+}
+#dadosconta input{
+    border-radius: 5px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    border:1px solid #B8B9BB;
+    font-family: R03;
+    font-size: 20px;
+}
+#dadosconta input:focus{
+    border:1px solid rgb(83, 83, 83);
+}
+#dadosconta h6{
+    font-size: 17px;
+    font-family:R01 ;
+    color: #8F8E8E;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: -1.5%;
+}
+#imgconta{
+    width: 110px;
+    height: 110px;
+    margin-left: 43%;
+    background-color: #505050;
+    margin-bottom: 5%;
+    /* background-image: url("../img/Sem\ título.jpg"); */
+    background-size: 90%;
+    background-repeat: no-repeat;
+    border-radius: 500px;
+}
+.tituloconta{
+    font-family: R01;
+    margin-top: 4%;
+}
+#alterar{
+    background-color: #46E8A9;
+    text-align: center;
+    font-family: R05;
+    color: #ffff;
+    padding: 1%;
+    cursor: pointer;
+    margin-left: 25%;
+    position: absolute;
+    margin-top: 1%;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+#alterar:hover{
+    background-color: #3eca95;
+}
+#sair{
+    background-color: #d36033;
+    text-align: center;
+    font-family: R05;
+    color: #ffff;
+    padding: 1%;
+    cursor: pointer;
+    margin-left: 20%;
+    position: absolute;
+    margin-top: 1%;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#custom{
+    background-color: #b8b8b8;
+    border-radius: 10px;
+    width: 10%;
+    padding: 3%;
+    padding-right: 5%;
+    float: right;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+#custom input{
+    -webkit-appearance: none;
+	width: 35px;
+	height: 35px;
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    display: inline-block;
+}
+@media screen and (max-width:800px) {
+    #conta{
+        margin-left: 0;
+        margin-bottom: 38%;
+    }
+    #dadosconta{
+        width: 90%;
+        margin-left: 2%;
+        margin-bottom: 60px;
+    }
+    .tituloconta{
+        text-align: center;
+        margin-top: 10%;
+        font-size: 20px;
+    }
+    #dadosconta h6{
+        font-size: 14px;
+        margin-top: 5%;
+    }
+    #dadosconta input{
+        height: 40px;
+        font-size: 18px;
+        border:1px solid #B8B9BB;
+    }
+    #dadosconta input:focus{
+        border:1px solid #505050;
+    }
+    #custom{
+        margin-right: 0;
+        width: 60%;
+        float: none;
+        margin-left: 20%;
+        right: 0;
+    }
+    #custom input{
+        width: 30%;
+        height: 35px;
+    }
+    #alterar{
+        padding: 2%;
+        font-size: 15px;
+    }
+    #sair{
+        padding: 2%;
+        margin-left: 5%;
+        font-size: 15px;
+    }
+
+}
+#custom label{
+    font-family: R03;
+}
+
+#poup-up{
+    position: fixed;
+    right: 40%;
+    top: 50%;
+    z-index: 999;
+    padding: 10px;
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+    font-family: R03;
+    box-shadow: 0 0 8em rgba(61, 61, 61, 0.801);
+}
+#sim{
+    color: red;
+    font-family: R05;
+}
+.x-2{
+    color: white;
+    padding-left: 10px;
+    cursor: pointer;
+}
+#sombra{
+    width: 100%;
+    height: 103%;
+    margin-top: -5%;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.158);
+}
+.img{
+    position: absolute;
+    float: right;
+    border-radius: 20px;
+    width:60% ;
+    right: -1%;
+    height:93% ;
+    margin-top: 2%;
+}
+@media screen and (max-width:800px) {
+    .img{
+        width: 83%;
+        height: 92%;
+        float: none;
+        margin-right: 6%;
+        right: 1%;
+    }
+}
